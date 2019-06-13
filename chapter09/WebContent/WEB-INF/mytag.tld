@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    <tlib-version>1.0</tlib-version>
+    <short-name>SimpleTag</short-name>
+    <uri>http://www.itcast.cn</uri>
+    <tag>
+    	<name>iterate</name>
+    	<tag-class>cn.itcast.chapter09.classistag.Iterate</tag-class>
+    	<body-content>JSP</body-content>
+    	<attribute>
+    		<name>num</name>
+    		<required>true</required>
+    	</attribute>
+    </tag>
+    
+     <tag>
+    	<name>iterate2</name>
+    	<tag-class>cn.itcast.chapter09.classistag.Iterate_Test</tag-class>
+    	<body-content>JSP</body-content>
+    	<attribute>
+    		<name>num</name>
+    		<required>true</required>
+    	</attribute>
+    </tag>
+    <tag>
+    	<name>toUpperCase</name>
+    	<tag-class>cn.itcast.chapter09.classistag.ToUpperCase</tag-class>
+    	<body-content>JSP</body-content>
+    </tag>
+    
+    <tag>
+    	<name>ipTag</name>
+    	<tag-class>cn.itcast.chapter09.classistag.IpTag</tag-class>
+    	<body-content>empty</body-content>
+    </tag>
+    
+      <tag>
+    	<name>dependent</name>
+    	<tag-class>cn.itcast.chapter09.classistag.tagdependent</tag-class>
+    	<body-content>tagdependent</body-content>
+    </tag>
+    
+    <tag>
+    	<name>simpleIterate</name>
+    	<tag-class>
+    		cn.itcast.chapter09.classistag.SimpleIterate
+    	</tag-class>
+    	<body-content>scriptless</body-content>
+    	<attribute>
+    	<name>num</name>
+    	<required>true</required>
+    	</attribute>
+    </tag>
+    
+    <tag>
+    	<name>choose</name>
+    	<tag-class>cn.itcast.chapter09.classistag.ChooseTag</tag-class>
+    	<body-content>scriptless</body-content>
+    </tag>
+    <tag>
+    	<name>when</name>
+    	<tag-class>cn.itcast.chapter09.classistag.WhenTag</tag-class>
+    	<body-content>scriptless</body-content>
+    	<attribute>
+    		<name>test</name>
+    		<required>true</required>
+    		<rtexprvalue>true</rtexprvalue>
+    	</attribute>
+    </tag>
+    <tag>
+    	<name>otherwise</name>
+    	<tag-class>cn.itcast.chapter09.classistag.OtherwiseTag</tag-class>
+    	<body-content> scriptless </body-content>
+    </tag>
+  
+    
+    
+</taglib>

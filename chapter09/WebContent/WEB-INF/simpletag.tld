@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    <tlib-version>1.0</tlib-version>
+    <short-name>SimpleTag</short-name>
+    <uri>/simpleTag</uri>
+     <tag>
+    	<name>welcome</name>
+    	<tag-class>cn.itcast.chapter09.classistag.Welcome</tag-class>
+    	<body-content>scriptless</body-content>
+    </tag>
+    	<tag>
+    		<name>antiHotLinking</name>
+    		<tag-class>cn.itcast.chapter09.classistag.AntiHotLinking</tag-class>
+    		<body-content>scriptless</body-content>
+    		<attribute>
+    			<name>url</name>
+    			<required>true</required>
+    		</attribute>
+    		
+    	</tag>
+    	<tag>
+    		<name>showtime</name>
+    		 <tag-class>cn.itcast.chapter09.classistag.Showtime</tag-class>
+    		 <body-content>scriptless</body-content>
+    		<attribute>
+    			<name>user</name>
+    			<required>true</required>
+    			<rtexprvalue>true</rtexprvalue>
+    		</attribute>
+    	</tag>
+    
+    	<tag>
+    		<name>examforeach</name>
+    		<tag-class>cn.itcast.chapter09.classistag.Examforeach</tag-class>
+    		<body-content>scriptless</body-content>
+    		<attribute>
+    			<name>object</name>
+    			<required>true</required>
+    			<rtexprvalue>true</rtexprvalue>
+    		</attribute>
+    		<attribute>
+    			<name>begin</name>
+    			<required>false</required>
+    		</attribute>
+    		<attribute>
+    			<name>step</name>
+    			<required>false</required>
+    		</attribute>
+    		<attribute>
+    			<name>var</name>
+    			<required>false</required>
+    		</attribute>
+    		<attribute>
+    			<name>end</name>
+    			<required>false</required>
+    		</attribute>
+    		<attribute>
+    			<name>varStatus</name>
+    			<required>false</required>
+    		</attribute>
+    		
+    	</tag>	
+    
+ </taglib>
